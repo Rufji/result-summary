@@ -1,0 +1,185 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:  hsl(221, 100%, 96%);
+    font-family: Hanken Grotesk;
+}
+
+div.container{
+    width: 400px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+}
+
+div.blue{
+    width: 50%;
+    height: 300px;
+    background: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+p.bluetitle{
+    color: white;
+    font-size: 13px;
+    margin-bottom: 20px;
+
+}
+
+div.white{
+    width: 50%;
+    height: 300px;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 15px 15px 0px;
+   -webkit-box-shadow: 26px 26px 42px 2px rgba(86,131,255,0.25); 
+    box-shadow: 26px 26px 42px 2px rgba(86,131,255,0.25);
+}
+
+div.scores{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.score{
+    color:  hsl(224, 30%, 27%);
+    font-weight: 900;
+}
+span.total{
+    color:  hsla(224, 30%, 27%, 0.5);
+}
+
+div.rating{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    background-color: azure;
+    margin: 6px;
+    padding: 7px;
+    font-size: 10px;
+}
+
+div.whitetitle{
+    width: 75%;
+    color: black;
+    margin: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+div.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(180deg, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    color: hsl(241, 100%, 89%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    font-size: 10px;
+    font-weight: 300;
+}
+div.circle span{
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+}
+
+div.texthead{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 6px;
+}
+p.text{
+    width: 80%;
+    text-align: center;
+    font-size: 12px;
+}
+div.bluetext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: hsl(241, 100%, 89%);
+    font-size: 14px;
+}
+div.button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+button{
+    margin: 5px;
+    width: 75%;
+    padding: 9px;
+    font-size: 10PX;
+    border-radius: 15px;
+    border-style: none;
+    color: white;
+    background-color: hsl(224, 30%, 27%);
+}
+
+#reaction{
+    color: hsl(0, 100%, 67%);
+    background-color: hsla(0, 100%, 67%, 0.06);
+    border-radius: 6px;
+}
+
+#memory{
+    color: hsl(39, 100%, 56%);
+    background-color: hsla(39, 100%, 56%, 0.06);
+    border-radius: 6px;
+}
+
+#verbal{
+    color: hsl(166, 100%, 37%);
+    background-color: hsla(166, 100%, 37%, 0.06);
+    border-radius: 6px;
+}
+
+#visual{
+    color: hsl(234, 85%, 45%);
+    background-color: hsl(234, 85%, 45%, 0.06);
+    border-radius: 6px;
+}
+
+@media screen and (max-width: 400px){
+
+    div.container{
+        flex-direction: column;
+        width: 270px;
+        height: 600px;
+    }
+    div.blue{
+        width: 100%;
+        border-radius: 0px 0px 15px 15px;
+    }
+    div.white{
+        width: 100%;
+        border-radius: 0px;
+    }
+
+}
